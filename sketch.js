@@ -1,8 +1,29 @@
+function setup(){
+  createCanvas(400,400)
+}
+
+function draw(){
+  // What does noStroke() mean?
+  fill(0, 255,0)
+  // mouseX, mouseY is an option that locks the X and Y number and tracks it. 
+  // For example: If you are at the point x:50 with your mouse, x will be 50
+  // If you are at y:20 with your mouseY will be 20
+  circle(mouseX, mouseY, 100)
+}
+
+function mousePressed(){
+  background(255,0,0)
+}
+
+
+// Happens once
+/*
 function setup() {
   createCanvas(400, 400);
   print("hello")
 }
 
+// Happens forever ( in a loop)
 function draw() {
   background(200, 200 ,200);
   // This the code for the lines
@@ -29,3 +50,5 @@ function draw() {
   rect(150,300,100,75);
   describe("My first project using p5.js")
 }
+  */
+
