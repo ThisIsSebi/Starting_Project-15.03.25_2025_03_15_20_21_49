@@ -1,19 +1,41 @@
+// Create your own variable
+// Declare Variable 
+// Initialize Variable
+ // Assignment operation
+// Use Variable
+
+let circleX = 100;
+let circleY = 200;
+let widthCircle = 1;
+
 function setup(){
   createCanvas(400,400)
 }
 
+function mousePressed(){
+  circleX = 0;
+  circleY = 0;
+}
+
 function draw(){
+  background(0)
   // What does noStroke() mean?
   fill(0, 255,0)
+  noStroke()
   // mouseX, mouseY is an option that locks the X and Y number and tracks it. 
   // For example: If you are at the point x:50 with your mouse, x will be 50
   // If you are at y:20 with your mouseY will be 20
-  circle(mouseX, mouseY, 100)
+  circle(circleX, circleY, widthCircle)
+
+  circleX = circleX + 0.5;
+  circleY = circleY + 0.5;
+  widthCircle = widthCircle + 0.5;
 }
 
-function mousePressed(){
-  background(255,0,0)
-}
+// Circle Y
+// Grow
+// Add 3 or 4 variables
+
 
 
 // Happens once
